@@ -1,0 +1,69 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="android, java..."><title>音视频处理学习 | LX</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/7.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/1.0.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">音视频处理学习</h1><a id="logo" href="/.">LX</a><p class="description">i hear and i forget, i see and i remember, i do and i understand</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">音视频处理学习</h1><div class="post-meta">Dec 4, 2017<span> | </span><span class="category"><a href="/categories/音视频/">音视频</a></span><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span></div><div class="post-content"><p>多媒体学习Demo集合：Demo中包含图片处理，音视频处理，相机使用，OpenGL，OpenSL，OpenCV，FFMpeg等学习，所有代码都不封装，一般由一个类完成功能，方便学习，Demo在不断完善中。<br><a id="more"></a></p>
+<ul>
+<li><a href="https://github.com/lixiaoshaxing/MultiMediaLearn" target="_blank" rel="external">源码地址</a>，任何问题都可以留言。</li>
+<li>图片处理<ul>
+<li>1.SurfaceView，GLSurfaceView,TextureView，ImageView，自定义View渲染Bitmap</li>
+<li>2.Bitmap压缩，剪裁，Renderscript滤镜处理(待)</li>
+</ul>
+</li>
+<li>相机使用<ul>
+<li>1.SurfaceView，GLSurfaceView，TextureView预览Camera，拍照</li>
+<li>2.SurfaceView，GLsurfaceView，TextureView同时预览Camera，共享数据</li>
+<li>3.多GLSurfaceView共享Camera，模仿小米系统相机九个滤镜同时预览</li>
+</ul>
+</li>
+<li>音视频处理<ul>
+<li>1.MediaPlayer结合SurfaceView，GLSurfaceView，TextureView播放视频</li>
+<li>2.MediaPlayer，MediaRecord录制视频</li>
+<li>3.AudioRecord，AudioTrack录制音频，播放音频</li>
+<li>4.Fmod处理音频，变声</li>
+<li>5.MediaExtractor，MediaCodec提取音频，播放音频，结合MediaMux添加背景音乐</li>
+<li>6.AudioRecoder，Camera，MediaCodec单独录制音频，视频</li>
+<li>7.AudioRecoder，Camera，MediaCodec，AudioMux录制视频</li>
+<li>8.录制视频，使用OpenGL处理，添加滤镜，水印</li>
+<li>9.视频添加背景音乐，转gif，断点录制（待）</li>
+<li>10.录制视频，使用FFmpeg增加滤镜，水印，剪裁（待）</li>
+</ul>
+</li>
+<li>OpenGL学习<ul>
+<li>1.冰球游戏，基本图形绘制，基本矩阵变换，触控</li>
+<li>2.粒子喷泉，烟火系统，天空盒，动态壁纸，陀螺仪，高度图等</li>
+<li>3.图片处理，OpenGL使用glsl处理图片，改色调，放大，虚化等</li>
+<li>4.OpenGL高级特性：VBO，PBO，FBO使用</li>
+<li>5.Camera预览界面解析ETC，动画，滤镜，美颜，水印</li>
+<li>6.加载STL模型，渲染3D模型</li>
+<li>7.加载OBJ模型</li>
+<li>8.加载OBJ-MTL模型，包含模型，纹理</li>
+<li>9.编译assimp，加载模型（待）</li>
+<li>10.加载骨架（待）</li>
+</ul>
+</li>
+<li>FFMpeg学习<ul>
+<li>1.本地视频推流，使用libRtmp，ffmpeg解码，libYuv转向</li>
+<li>2.直播，采集音频，视频，使用x264，faac编码，librtmp推流，libYuv转向</li>
+<li>3.解析音频为pcm，ffmpeg解码，本地方法调用java层AudioTrack播放音频</li>
+<li>4.FFMpeg解码本地视频，使用队列，保持音视频同步播放</li>
+<li>5.OpenSL录制音频，解码音频，播放音频</li>
+</ul>
+</li>
+<li>OpenCV入门<ul>
+<li>1.使用OpenCV进行边框识别，并剪裁Bitmap</li>
+</ul>
+</li>
+<li><a href="https://github.com/lixiaoshaxing/MultiMediaLearn" target="_blank" rel="external">源码地址</a>，任何问题都可以留言。</li>
+</ul>
+</div><div class="tags"><a href="/tags/android/">android</a><a href="/tags/java/">java</a><a href="/tags/音视频/">音视频</a></div><div id="lv-container" data-id="city" data-uid="MTAyMC8zMDUxMy83MDY3"><script>(function(d, s) {
+   var j, e = d.getElementsByTagName(s)[0];
+   if (typeof LivereTower === 'function') { return; }
+   j = d.createElement(s);
+   j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+   j.async = true;
+   e.parentNode.insertBefore(j, e);
+})(document, 'script');</script></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" class="search-form"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="http://yoursite.com"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/音视频/">音视频</a><span class="category-list-count">1</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/android/" style="font-size: 15px;">android</a> <a href="/tags/java/" style="font-size: 15px;">java</a> <a href="/tags/音视频/" style="font-size: 15px;">音视频</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/12/04/音视频处理学习/">音视频处理学习</a></li></ul></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2017 <a href="/." rel="nofollow">LX.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.1.20/jquery.fancybox.min.css"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?3ae0d1756fe5dceaf55089f65a2f93c5";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+  })();
+</script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
